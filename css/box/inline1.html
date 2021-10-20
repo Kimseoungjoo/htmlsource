@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        background-color: lightsalmon;
+        /* height: 300px;
+        width: 500px; */
+      }
+      div {
+        text-align: center;
+      }
+      /* 요소 변경을 원하면 display : inline / block*/
+      div a {
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        /* display: inline-block; block 요소 inline 요소를 둘 다 사용하고 싶을 때 */
+        display: none;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--sapn : 인라인 요소
+        width : 0 (기본값) => 내용 만큼만 적용된다 / 값 지정은 안된다 
+        heigth : 0 (기본값) => 내용만큼만 적용도니다  / 값 지정이 안된다 
+
+    -->
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+      praesentium ullam exercitationem magni ex optio aliquid, quos asperiores
+      in, consequuntur explicabo excepturi officia qui sequi vel ratione cumque
+      fugit sit!
+    </span>
+    <!-- a : 인라인 요소 -->
+    <div>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </div>
+  </body>
+</html>
