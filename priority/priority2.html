@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        color: green;
+      }
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        !important : 우선순위가 가장 높다 
+        인라인선언  
+        아이디 선택자
+        클래스 선택자 (:hover, :link, :active)
+        태그 선택자 (::before,::after): 우선순위가 가장 낮다
+        전체 선택자
+        상속
+
+        :not() => 예외(우선순위가 너무 낮아서 밀려버릴 수 있다.)
+        :not(태그/클래스) => 태그선택자, 클래스 선택자의 우선순위를 가질 수 있다.
+      -->
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id
+        soluta alias ab, nisi corrupti omnis nihil rerum magni eligendi beatae
+        totam odio voluptas ipsa quasi excepturi fugit, iste facilis.
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro at vero,
+        enim vel natus impedit dolorum rerum quisquam possimus? Optio dolores
+        placeat qui, ex quidem corporis quas expedita fugit sint.
+      </p>
+    </div>
+  </body>
+</html>
