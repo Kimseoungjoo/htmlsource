@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .clearfix::after {
+        content: "";
+        /*  1.공백을 불러온다 */
+        clear: both;
+        /* float가 left/right 일지 모르니 둘다 바꾸겠다 
+						그래서 공백이 class 3번 밑에 생성된다--> */
+        display: block;
+        /* 2. 그걸 다시 블록으로 바꿔줘*/
+      }
       .child1 {
         width: 100px;
         height: 100px;
@@ -20,15 +29,22 @@
         width: 200px;
         height: 200px;
         background-color: violet;
+        /* clear: left; */
       }
     </style>
   </head>
   <body>
-    <div class="parent1">
+    <div class="parent1 clearfix">
       <div class="child1">1</div>
       <div class="child1">2</div>
       <div class="child1">3</div>
-      <div class="box">4</div>
     </div>
+    <div class="box">4</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem saepe
+      nostrum, voluptatem nisi odio nulla eius maxime doloribus impedit
+      voluptatibus, hic possimus eveniet dolore quod assumenda porro sequi
+      libero cum!
+    </p>
   </body>
 </html>
