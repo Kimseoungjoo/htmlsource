@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 4000px;
+}
+img {
+  vertical-align: top;
+}
+.box {
+  border: 2px solid black;
+  /* position: absolute;  */
+  /* 부모가 기준이다
+    fixed와 차이 :  절대 위치에서 움직이지않는다 
+
+  */
+  position: fixed;
+  left: 100px;
+  top: 100px;
+}
