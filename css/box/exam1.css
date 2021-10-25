@@ -1,0 +1,31 @@
+/* 요소 크기(박스 모양으로 잡는게 기본) : content + padding + border*/
+* {
+  box-sizing: border-box;
+}
+/* 전체 문서의 배경색을 주고 싶다  색은 : #ecf0f1 */
+body {
+  background-color: #ecf0f1;
+}
+.wrapper {
+  max-width: 60rem;
+  width: 100%;
+  margin: 2rem auto;
+  border: 2px dashed silver;
+}
+.flexbg main {
+  background-color: #fff;
+  width: 60%;
+  order: 2;
+  padding: 16px;
+}
+.flexbg {
+  display: flex;
+}
+.flexbg .left {
+  order: 1;
+  background-color: #3498db;
+}
+.flexbg .right {
+  order: 3;
+  background-color: #34495e;
+}
