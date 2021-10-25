@@ -29,3 +29,29 @@ body {
   order: 3;
   background-color: #34495e;
 }
+/* 481 ~ 768 px left, right 아래쪽으로 이동*/
+@media screen and (max-width: 768px) {
+  .flexbg {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+  .flexbg main {
+    /* background-color: #fff; */
+    width: 100%;
+    order: 1;
+    /* padding: 16px; */
+  }
+  .flexbh .sidebar {
+    width: 50%;
+  }
+  .flexbg .left {
+    order: 2;
+    background-color: #3498db;
+  }
+}
+/* 1~480px 각 div 가 하나의 행을 차지*/
+@media screen and (max-width: 480px) {
+  .flexbg .sidebar {
+    width: 100%;
+  }
+}
